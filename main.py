@@ -27,7 +27,7 @@ if place:
 
             if option == 'Temperature':
                 # Create temperature plot
-                temperatures = [dict['main']['temp'] for dict in filtered_data]
+                temperatures = [dict['main']['temp'] / 10 for dict in filtered_data]
                 dates = [dict['dt_txt'] for dict in filtered_data]
                 figure = px.line(x=dates, y=temperatures, labels={"x": "Dates", "y": "Temperature"})
                 st.plotly_chart(figure)
