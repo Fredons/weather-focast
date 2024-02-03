@@ -1,6 +1,6 @@
 # Weather App with Proper Error Handling
 
-This project is a Weather Forecast application developed using Python, Streamlit, Plotly Express, and geopy library. The application allows users to obtain weather forecasts for specified locations over the next few days, with options to view temperature or sky conditions.
+This project is a Weather Forecast application developed using Python and Streamlit, with proper error handling. It allows users to obtain weather forecasts for specified locations over the next few days, with options to view temperature or sky conditions.
 
 ## Features
 
@@ -30,26 +30,31 @@ This project is a Weather Forecast application developed using Python, Streamlit
 
 ## Usage
 
-1. Run the Streamlit application:
+1. Ensure that you have set up your API key in a `.env` file in the project directory. Add the following line to your `.env` file:
+
+    ```plaintext
+    API_KEY=your_api_key_here
+    ```
+
+2. Run the Streamlit application:
 
     ```bash
     streamlit run main.py
     ```
 
-2. Access the application via the provided URL in the terminal.
+3. Access the application via the provided URL in the terminal.
 
-3. Enter the desired location, select the forecast days, and choose between temperature or sky condition view.
+4. Enter the desired location, select the forecast days, and choose between temperature or sky condition view.
 
-4. View the weather forecast for the specified location.
+5. View the weather forecast for the specified location.
 
-## Error Handling
+## Backend API
 
-- **Invalid Location**: If the provided location is not found, a warning message will be displayed prompting the user to check the spelling or provide a valid location.
-- **Unexpected Errors**: Any unexpected errors during the execution of the application will be caught and displayed to the user.
+The `backend.py` file contains the backend logic for fetching weather data from the OpenWeatherMap API. Ensure that you have set up your API key in the `.env` file as described in the Usage section.
 
 ## Contributions
 
 Contributions to this project are welcome. Feel free to submit bug reports, feature requests, or pull requests via the GitHub repository.
 
 
-**Note**: This README provides an overview of the Weather App with Proper Error Handling. For detailed implementation and code explanations, please refer to the `main.py` file in the repository.
+**Note**: This README provides an overview of the Weather App with Proper Error Handling. For detailed implementation and code explanations, please refer to the `main.py` and `backend.py` files in the repository.
