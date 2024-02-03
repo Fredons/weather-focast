@@ -1,0 +1,4 @@
+geopy==2.4.0
+plotly==5.18.0
+Requests==2.31.0
+streamlit==1.27.2
